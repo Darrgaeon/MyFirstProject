@@ -1,0 +1,62 @@
+@import '../_var'
+@import '../_functions'
+
+.slider
+	background: $brown-color
+	.slide
+		text-align: left
+		margin: 194px 0 209px 0
+		color: #fff
+		.discription
+			font-family: "WildYouthRegular", sans-serif
+			font-size: 45px
+			color: $accent-color
+		.title
+			margin-top: 17px
+			font-family: "MontserratBold", sans-serif
+			font-size: 36px
+			letter-spacing: 5px
+			font-weight: bold
+			color: #fff
+		.text
+			margin-top: 36px
+			font-family: "AverageRegular", sans-serif
+			font-size: 15px
+			padding-right: 40px
+			color: #ececec
+			line-height: 30px
+		.button
+			margin-top: 55px
+			color: #121212
+	.owl-dots
+		position: relative
+		top: -50px
+		.owl-dot span
+			background: transparent
+			border: 2px #fff solid
+			position: relative
+			width: 12px
+			height: 12px
+		.owl-dot.active span,
+		.owl-dot:hover span
+			background: $accent-color
+			border: none
+	.owl-nav
+		position: relative
+		top: -420px
+		font-size: 64px
+		color: #fff
+		span
+			width: 20px
+			height: 20px
+		.owl-prev
+			position: absolute
+			left: 250px
+		.owl-next
+			position: absolute
+			right: 250px
+
+.owl-theme .owl-nav [class*=owl-]:hover
+	background: none
+	color: $accent-color
+

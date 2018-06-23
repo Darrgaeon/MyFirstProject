@@ -1,0 +1,186 @@
+@import '../_var'
+@import '../_functions'
+@import '../_extends'
+
+.container-icons
+	font-size: 20px
+	text-align: center
+	margin: 30px 0
+	a
+		margin-right: 35px
+	a:last-child
+		margin-right: 0
+	a
+		color: #111
+
+.container-foods
+	background: #dbdbdb
+	text-align: center
+	.menu-3
+		@extend %settings-menu
+		margin-top: 70px
+		ul
+			margin: 0
+			width: 100%
+			display: flex
+			justify-content: space-between
+			padding: 0
+		li
+			@extend %settings-ul-li
+			a
+				color: #626262
+				font-weight: bold
+				font-size: 15px
+			a:hover
+				color: $accent-color
+			a:active
+				color: darken($accent-color, 20%)
+	.foods-info
+		background: #fff
+		outline: 1px solid #8e8e8d
+		outline-offset: -11px
+		margin: 170px 0 200px 0
+		.title
+			padding: 92px 0 0 0
+			font-family: "MontserratBold", sans-serif
+			font-size: 36px
+			font-weight: bold
+			letter-spacing: 4px
+		.item-img-container
+			margin-top: 45px
+		.text
+			padding: 42px 60px 0 60px
+			display: inline-block
+			font-family: "AverageRegular", sans-serif
+			font-size: 15px
+			line-height: 30px
+			font-weight: bold
+			color: #4d4d4d
+		.button
+			margin-top: 40px
+			padding-bottom: 80px
+			display: inline-flex
+			.item-button
+				background: #fff
+				border: 1px #111 solid
+			.item-button:hover
+				background: lighten($accent-color, 5%)
+			.item-button:active
+				background: darken($accent-color, 10%)
+	.item-arrow
+		margin: 100px 0 50px 0
+		a
+			filter: gray saturate(-100%)
+			filter: brightness(-70%)
+			filter: contrast(-1000%)
+
+.container-figures
+	background: #e2e2e2
+	position: relative
+	padding-top: 100px
+	padding-bottom: 100px
+	.container-square
+		.square
+			width: 100%
+			height: 390px
+			background: $brown-color
+		.square_2
+			width: 100%
+			border: 1px $accent-color solid
+			position: absolute
+			top: 20px
+			left: -15px
+			height: 350px
+	.container-about
+		position: absolute
+		top: -355px
+		left: 250px
+		width: 100%
+		.block-about
+			background: #fff
+			text-align: left
+			position: relative
+			left: 230px
+			padding:
+					top: 60px
+					bottom: 30px
+					left: 45px
+					right: 45px
+			.container-span
+				font-family: "WildYouthRegular", sans-serif
+				font-size: 45px
+				color: $accent-color
+				margin-bottom: 10px
+			.title
+				h2
+					font-family: "MontserratBold", sans-serif
+					font-size: 36px
+					font-weight: bold
+					letter-spacing: 3px
+			.text
+				margin-top: 20px
+				color: $brown-color
+				font-family: "AverageRegular", sans-serif
+				margin-bottom: 20px
+				opacity: .8
+				font-size: 14px
+				line-height: 26px
+				font-weight: bold
+
+.container-history
+	background: $brown-color
+	.block-history
+		margin-top: 142px
+		margin-bottom: 113px
+		// margin-left: 300px
+		.discription
+			font-family: "WildYouthRegular", sans-serif
+			font-size: 50px
+			color: $accent-color
+			// margin-bottom: 30px
+		.title
+			font-family: "MontserratBold", sans-serif
+			font-size: 36px
+			color: #fff
+			margin-top: 25px
+			font-weight: bold
+			// position: relative
+			// left: 100px
+		.container-img
+			margin-top: 43px
+		.text
+			margin-top: 43px
+			font-family: "AverageRegular", sans-serif
+			font-size: 14px
+			line-height: 28px
+			color: #dcdcdc
+		.button
+			display: inline-flex
+			margin-top: 40px
+			.item-button
+				padding: 20px 47px
+
+
+
+.container-lunch
+	background: #292929
+	.item-lunch
+		margin: 142px 0 105px 0
+		text-align: center
+		.title
+			font-size: 30px
+			color: #fff
+			font-family: "AverageRegular", sans-serif
+			text-transform: none
+		.discription
+			margin-top: 35px
+			font-family: "WildYouthRegular", sans-serif
+			font-size: 45px
+			color: $accent-color
+
+
+
+
+
+
+

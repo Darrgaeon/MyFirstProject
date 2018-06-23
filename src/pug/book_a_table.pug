@@ -1,0 +1,37 @@
+.container_book_a_table
+	.container
+		.row
+			+book_a_table_title
+		.row.justify-content-center
+			.col-md-3
+				.form-group
+					.input-group.date#datetimepicker1
+						input(type="text", placeholder="Time").form-control
+						span.input-group-addon
+							span.glyphicon-time.glyphicon
+
+			.col-md-3
+				.form-group
+					.input-group.date#datetimepicker2
+						input(type="text", value="26-02-2018", placeholder="Date").form-control
+						span.input-group-addon
+							span.glyphicon-calendar.glyphicon
+			.col-md-3
+				.form-group
+					.input-people
+						select(multipler)
+							option 1 people
+							option 2 people
+							option 3 people
+							option 4 people
+							option 5 people
+							option 6 people
+							option 7 people
+		.row.justify-content-center
+			.button
+				a(href="#").item-button book a table
+
+.container_book_a_table-2
+	.container
+		.row.justify-content-center
+			+book_a_table_title-2

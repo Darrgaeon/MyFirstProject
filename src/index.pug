@@ -1,0 +1,41 @@
+include ./pug/mixins
+
+doctype html
+html(lang="EN")
+    head
+        block title
+            title Starter Template
+
+        block head_meta
+            include ./pug/head_meta
+
+        block head_custom_css
+            link(rel="stylesheet", href="./css/main.min.css")
+
+
+
+    body
+        .mobile-menu#mobileMenu
+            a(href="javascript:void(0)", onClick="closeNav()").closebtn &times;
+            a(href="#") Home
+            a(href="#") Reservations
+            a(href="#") Menu
+            a(href="#") Blog
+            a(href="#") Features
+            a(href="#") Contact
+            a(href="#") Features
+
+        #main-true
+            include ./pug/header
+            include ./pug/slider
+            include ./pug/description
+            include ./pug/menu
+            include ./pug/opening-hours
+            include ./pug/our_chefs
+            include ./pug/book_a_table
+            include ./pug/bottom-slider
+            include ./pug/footer
+
+
+            include ./pug/scripts
+            include ./pug/ie_fix

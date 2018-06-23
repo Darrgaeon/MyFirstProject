@@ -1,0 +1,139 @@
+@import '../_var'
+@import '../_functions'
+@import '../_extends'
+
+.top-pannel
+	background: $accent-color
+	font-size: 13px
+	padding: 3px 0 3px 0
+	.pannel-block-left
+		font-family: "AverageRegular", sans-serif
+		i
+			padding-right: 4px
+	.pannel-block-right
+		font-size: 15px
+		text-align: right
+		a
+			display: inline-block
+			color: #1b1b1b
+			margin-right: 18px
+		a:nth-child(3)
+			margin-right: 0
+
+.top-menu
+	background: #262626
+	.logo
+		width: 100%
+		margin: 18px 0
+		img
+			height: 45px
+	.main-menu
+		@extend %settings-menu
+		margin: 0
+		width: 100%
+		ul
+			margin: 0
+			width: 100%
+			display: flex
+			justify-content: space-between
+			padding: 0
+			flex-wrap: wrap
+			li
+				@extend %settings-ul-li
+				line-height: 30px
+				a
+					color: #e2e2e2
+					display: block
+				a:hover
+					color: $accent-color
+				a:active
+					color: darken($accent-color, 20%)
+	.col-sm-3
+		justify-content: flex-end
+	.mobile-menu-button
+		text-align: right
+		#navBtn
+			font-size: 20px
+			cursor: pointer
+			color: #fff
+
+
+.welcome-to-restaurant
+	background: $brown-color
+	.block-about-restaurant
+		text-align: center
+		margin-top: 317px
+		margin-bottom: 240px
+		.discription
+			font-family: "WildYouthRegular", sans-serif
+			font-size: 50px
+			color: $accent-color
+		.title
+			font-family: "Average", sans-serif
+			font-size: 76px
+			margin: 5px 0 0 0
+			color: #fff
+		.text
+			font-family: "Average", sans-serif
+			color: #c1c1c1
+			font-size: 16px
+		.item-img-container
+			margin-top: 40px
+		.button
+			display: inline-flex
+			margin-top: 40px
+	.item-arrow
+		text-align: center
+		margin-bottom: 60px
+
+.menu-2
+	background: #fff
+	text-align: center
+	margin: 30px 0 15px 0
+	.main-menu
+		@extend %settings-menu
+		margin-top: 30px
+		ul
+			margin: 0
+			width: 100%
+			display: flex
+			justify-content: space-between
+			padding: 0
+		li
+			@extend %settings-ul-li
+			a
+				color: #626262
+				font-weight: bold
+				font-size: 15px
+			a:hover
+				color: $accent-color
+			a:active
+				color: darken($accent-color, 20%)
+
+.mobile-menu
+	height: 100%
+	width: 0
+	position: fixed
+	z-index: 1
+	top: 0
+	left: 0
+	background-color: #111
+	overflow-x: hidden
+	transition: 0.5s
+	padding-top: 60px
+	a
+		padding: 8px 8px 8px 32px
+		text-decoration: none
+		font-size: 25px
+		color: #818181
+		display: block
+		transition: 0.3s
+		font-size: 18px
+		&:hover
+			color: #f1f1f1
+	.closebtn
+		position: absolute
+		top: 0
+		right: 25px
+		font-size: 36px
+		margin-left: 50px

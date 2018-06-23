@@ -1,0 +1,70 @@
+.container-icons
+	.container
+		.row.justify-content-center
+			.col-12
+				a(href="#")
+					i.fab.fa-facebook
+				a(href="#")
+					i.fab.fa-instagram
+				a(href="#")
+					i.fab.fa-twitter-square
+
+.container-foods
+	.container
+		.row.justify-content-center
+			.col-lg-8.col-md-12.d-none.d-md-block.d-xl-none
+				.menu-3
+					ul
+						li
+							a(href="#") Home
+						li
+							a(href="#") Reservations
+						li
+							a(href="#") Menu
+						li
+							a(href="#")
+								img(src="./image/logo.png", alt="logo")
+						li
+							a(href="#") Blog
+						li
+							a(href="#") Features
+						li
+							a(href="#") Contact
+			.col-md-8.col-12
+				+foods-info
+
+
+.container-figures
+	.container
+		.row
+			.col-lg-12
+				.container-square
+					.row
+						.col-xl-3.col-md-6
+							.square
+						.col-xl-3.col-md-6
+							.square
+						.col-xl-5
+							.square_2
+			.col-xl-7.col-md-12
+				.container-about
+					.block-about
+						.container-span
+							span Welcome to
+						.title
+							h2 Steakville
+						.text
+							p I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.I am text block. I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
+
+
+.container-history
+	.container
+		.row
+			+block-history
+
+
+.container-lunch
+	.container
+		.row.justify-content-center
+			+item-lunch
+

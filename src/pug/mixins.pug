@@ -1,0 +1,248 @@
+include ./mixins/typography
+
+
+mixin pannel-block-left()
+	.col-lg-8.col-md-8.col-12
+		.pannel-block-left
+			span #[i.fas.fa-map-marker-alt] New Scotland Yard, 8-10 Broadway, Westminster, London SW1H 0BG
+
+
+mixin pannel-block-right()
+	.col-lg-4.col-md-4.col-12.ml-auto
+		.pannel-block-right
+			a(href="#")
+				i.fab.fa-facebook
+			a(href="#")
+				i.fab.fa-instagram
+			a(href="#")
+				i.fab.fa-twitter-square
+
+mixin logo()
+	.logo
+		a(href="#")
+			img(src="./image/logo.png", alt="logo")
+
+
+mixin menu(array)
+	.main-menu
+		ul
+			each item in array
+				li(class=item.custom_class)
+					a(href=item.link)= item.title
+
+
+mixin item-lunch()
+	.col-12
+		.item-lunch
+			h2.title “Ask not what you can do for your country. Ask what’s for lunch.”
+			.discription
+				span Orson Welles
+
+
+
+mixin menu_title()
+	.col-12
+		.menu_title
+			.discription
+				span Our Dishes
+			h2.title menu
+
+
+mixin menu_item(img, title, type, text, price)
+	//- .menu__items
+	.col-xl-6.menu__items--item
+			//- .container
+			.row
+				.item__image--container.col-sm-2.d-sm-block
+					img(src=img).item__image--container--image
+				.item__description.col-sm-10.col-12
+					.item__description--container
+						.item__description--container--title= title
+						.item__description--container--type= type
+						.item__description--container--text= text
+						.item__description--container--price= price
+
+mixin info-our-menu()
+	.col-8
+		.info-our-menu
+			.discription
+				span Steakville
+			h2.title Our menu
+			p.text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+
+mixin item-menu-food(img, title, type, price)
+	.col-xl-6.col-12
+		.item-menu-food
+			.row
+				.container-img
+					img(src=img)
+				.text
+					h3.title= title
+					.type
+						span= type
+				.price
+					span= price
+
+mixin opening_house()
+	.col-12
+		.opening_house
+			.discription
+				span Your Welcome
+			h2.title opening hours
+
+mixin foods-info()
+	.foods-info
+		h2.title Organic food
+		.item-img-container
+			img(src="./image/arrow.png", alt="arrow")
+		p.text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+		.button
+			a(href="#").item-button Menu
+	.item-arrow
+		a(href="#")
+			img(src="./image/arrow_3.png", alt="arrow_3")
+
+mixin slide()
+	.slide
+		.container
+			.row
+				.col-lg-5.col-md-8
+					.discription
+						span The Best Cuisine
+						h2.title in your town
+						p.text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					.button
+						a.item-button Menu
+						//- End
+
+mixin block-history()
+	.col-md-6.col-12
+		.block-history#ddd
+			.discription
+				span Discover
+				h2.title Our History
+			.container-img
+				img(src="./image/arrow.png", alt="arrow")
+				p.text I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.I am text block. I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
+			.button
+				a(href="#").item-button About us
+
+mixin our-chefs()
+	.col-12
+		.our-chefs
+			.discription
+				span Our Staff
+			h2.title meet our chefs
+
+
+mixin item-shefs(img, title, type, text)
+	.col-lg-3.col-12
+		.item-shefs
+			.container-img
+				img(src=img)
+			h3.title= title
+			.type
+				span= type
+			.container-icons
+				a(href="#")
+					i.fab.fa-facebook
+				a(href="#")
+					i.fab.fa-instagram
+				a(href="#")
+					i.fab.fa-twitter-square
+			.info
+				span= text
+
+mixin our-chefs-2()
+	.col-10
+		.our-chefs
+			.discription
+				span Our Staff
+			h2.title meet our chefs
+			p.text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+
+mixin item-shefs-2(img, title, type)
+	.col-xl-4.col-12
+		.item-shefs-2
+			.container-img
+				img(src=img)
+			h3.title= title
+			.type
+				span= type
+			.container-icons
+				a(href="#")
+					i.fab.fa-facebook
+				a(href="#")
+					i.fab.fa-instagram
+				a(href="#")
+					i.fab.fa-twitter-square
+
+mixin book_a_table_title()
+	.col-12
+		.book_a_table_title
+			.discription
+				span Reservation
+			h2.title Book a Table
+			.container-img
+				img(src="./image/arrow.png", alt="arrow")
+
+mixin book_a_table_title-2()
+	.col-md-8.col-12
+		.book_a_table_title-2
+			.discription
+				span Reservation
+			h2.title Book a Table
+			p.text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+			.button
+				a(href="#").item-button book a table
+
+
+mixin bottom-slide()
+	.bottom-slide
+		.container
+			.row.justify-content-center
+				.col-md-8.col-12
+					.discription
+						.img-container
+							img(src="./image/xz.png", alt="")
+						p.text "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”
+						h3.title John Wick
+						.discription
+							span Proffesional Cleaner
+
+
+mixin footer_info()
+	.col-md-8.col-12
+		.footer_info
+			.discription
+				span Our Best Clients
+			h2.title HAPPY CUSTOMERS
+			.container-img
+				img(src="./image/arrow.png", alt="arrow")
+			p.text "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”
+			.container-stars
+				i.fas.fa-star
+				i.fas.fa-star
+				i.fas.fa-star
+				i.fas.fa-star
+				i.far.fa-star
+			h3 bad comedian
+			.type
+				span Movie Critic
+
+mixin footer_newsletter()
+	.col-12
+		.footer_newsletter
+			h3.title SUBSCRIBE TO OUR NEWSLETTER
+			.container-img
+				img(src="./image/arrow.png", alt="arrow")
+
+mixin footer_email()
+	.col-12
+		.footer_email
+			.row.justify-content-center
+				.email
+					input(type="email" placeholder="Email")
+				.button
+					a(href="#").item-button SUBSCRIBE

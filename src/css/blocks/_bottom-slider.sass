@@ -1,0 +1,66 @@
+@import "_functions"
+@import "_var"
+
+.bottom-slider
+	background: #292929
+	.bottom-slide
+		text-align: center
+		padding-top: 100px
+		.img-container
+			width: 20px
+			height: 20px
+			margin: 0 auto
+		.text
+			color: #d9d9d9
+			font-size: 14px
+			font-family: "AverageRegular", sans-serif
+			margin-top: 40px
+		.title
+			margin-top: 30px
+			font-size: 16px
+			font-family: "MontserratBold", sans-serif
+			font-weight: bold
+			color: #fff
+			letter-spacing: 3px
+		.discription
+			font-family: "MinionProRegular", sans-serif
+			font-size: 15px
+			color: $accent-color
+			padding-bottom: 70px
+
+	.owl-dots
+		position: relative
+		top: -50px
+		.owl-dot span
+			position: relative
+			background: transparent
+			border: 2px #907955 solid
+			width: 12px
+			height: 12px
+			border-radius: 0
+		.owl-dot.active span,
+		.owl-dot:hover span
+			background: $accent-color
+			border: none
+			border-radius: 0
+	.owl-nav
+		position: relative
+		top: -260px
+		font-size: 24px
+		color: #907955
+		span
+			width: 24px
+			height: 24px
+		.owl-prev
+			position: absolute
+			left: 450px
+		.owl-next
+			position: absolute
+			right: 450px
+
+.owl-theme .owl-nav [class*=owl-]:hover
+	background: none
+	color: $accent-color
+	text-decoration: none
+
+

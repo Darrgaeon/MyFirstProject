@@ -1,0 +1,40 @@
+{
+  "name": "starter_template",
+  "version": "1.0.2",
+  "description": "It's a starter template for a web-developer.  I'll try to do all the best for improve it :3",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "gulp",
+    "browser-sync": "browser-sync"
+  },
+  "author": "PowerSlime",
+  "license": "MIT",
+  "dependencies": {
+    "browser-sync": "^2.23.7",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.3",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.2.1",
+    "imagemin-jpeg-recompress": "^5.1.0",
+    "node-bourbon": "^4.2.8"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PowerSlime/starter_template.git"
+  },
+  "keywords": [
+    "gulp",
+    "html",
+    "css",
+    "web-developer"
+  ],
+  "bugs": {
+    "url": "https://github.com/PowerSlime/starter_template/issues"
+  },
+  "homepage": "https://github.com/PowerSlime/starter_template#readme"
+}

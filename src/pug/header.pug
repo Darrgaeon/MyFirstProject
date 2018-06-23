@@ -1,0 +1,69 @@
+header
+    .top-pannel
+        .container
+            .row
+                +pannel-block-left
+                +pannel-block-right
+    .top-menu
+        .container
+            .row
+                .col-lg-3.col-md-2.col-5.col-sm-5
+                    +logo
+                .col-lg-7.col-md-10.col-2.ml-auto.d-flex.align-items-center
+                    +menu([
+                        {link: "/", title: "Home"},
+                        {link: "#", title: "Reservations"},
+                        {link: "#", title: "Menu"},
+                        {link: "#", title: "Blog"},
+                        {link: "#", title: "Features"},
+                        {link: "#", title: "Contact"},
+                        {link: "#", custom_class: "fas.fa-globe"}
+                    ])
+
+
+                .col-sm-3.col-5.d-md-none.d-flex.align-items-center
+                    .mobile-menu-button
+                        span#navBtn(onClick="openNav()") &#9776; menu
+
+                .col-1.d-md-none.d-flex.align-items-center
+                .mobile-menu
+                    a(href="#").toggle-menu
+                    i.fas.fa-bars
+    li.menu-button
+    a(href="#").toggle-menu
+        i.fas.fa-globe
+
+    .welcome-to-restaurant
+        .container
+            .row.justify-content-center
+                .col-md-8
+                    .block-about-restaurant
+                        .discription
+                            span Welcome to
+                            h1.title Steakville Restaurant
+                            p.text New Scotland Yard, 8-10 Broadway, Westminster, London SW1H 0BG
+                        .item-img-container
+                            img(src="./image/arrow.png", alt="arrow")
+                        .button
+                            a(href="#").item-button Menu
+                    .item-arrow
+                        a(href="#")
+                            img(src="./image/arrow_2.png", alt="arrow_2")
+
+
+    .menu-2
+        .container
+            .row.justify-content-center
+                .col-lg-7.col-12
+                    .logo
+                        a(href="#")
+                            img(src="./image/logo_2.png", alt="logo_2")
+                        +menu([
+                            {link: "/", title: "Home"},
+                            {link: "#", title: "Reservations"},
+                            {link: "#", title: "Menu"},
+                            {link: "#", title: "Blog"},
+                            {link: "#", title: "Features"},
+                            {link: "#", title: "Contact"}
+                        ])
+

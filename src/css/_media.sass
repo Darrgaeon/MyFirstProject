@@ -1,0 +1,421 @@
+@import "bourbon"
+@import "_functions"
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+
+	.container-opening-hours
+		.col-lg-4
+			.block-right-hours
+				.lunch
+					.text_
+						padding-bottom: 42px
+	.owl-nav
+		display: none
+
+	.container-figures
+		.container-square
+			.square_2
+				display: none
+		.container-about
+			position: absolute
+			top: -355px
+			left: 0px
+			.block-about
+				left: 0
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+
+	.container-figures
+		.container-square
+			.square_2
+				display: none
+		.container-about
+			position: absolute
+			top: -355px
+			left: 0px
+			.block-about
+				left: 0
+
+
+	/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+
+	.top-pannel
+		.col-12
+			display: flex
+			justify-content: center
+			.pannel-block-left
+				font-size: 14px
+				margin-bottom: 20px
+
+	.top-menu
+		.main-menu
+			display: none
+
+	.menu-2
+		.main-menu
+			ul
+				li
+					display: none
+	.slider
+		.slide
+			text-align: center
+			.text
+				padding-right: 10px
+
+	.container-history
+		.row
+			justify-content: center
+			.block-history
+				margin-right: 15px
+
+	.container-figures
+		.container-square
+			.square
+				height: 470px
+			.col-md-6:nth-child(2)
+				.square
+					display: none
+
+		.container-about
+			position: absolute
+			top: -440px
+			.block-about
+				margin: 0 25px
+
+	.container-our-chefs
+		.our-chefs
+			margin: 87px 0 50px 0
+		.item-shefs
+			margin: 50px 0
+			.title
+				margin-bottom: 20px
+			.container-icons
+				margin: 10px 0
+				i
+					color: $accent-color
+					font-size: 14px
+			.info
+				font-size: 15px
+				font-family: "AverageRegular", sans-serif
+				color: #fff
+				padding: 0 25px
+
+
+	.container-our-chefs-2
+		.item-shefs-2
+			.container-img
+				img
+					width: 250px
+					height: 250px
+
+	.container-our-menu
+		.info-our-menu
+			margin-bottom: 0
+		.item-menu-food
+			text-align: center
+			margin: 60px 0
+			.row
+				justify-content: center
+				.container-img
+					img
+						width: 133px
+						height: 98px
+				.title
+					font-size: 18px
+				.type
+					font-size: 21px
+				.price
+					font-size: 21px
+					margin-top: 30px
+
+	.footer
+		.footer_email
+			.email
+				margin-left: 0
+
+	.container-opening-hours
+		.col-lg-8
+			.block-left-hours
+				margin: 0 15px 0 15px
+				.container-img
+		.col-lg-4
+			.block-right-hours
+				margin: 0 15px 0 15px
+
+	.animated
+		/*CSS transitions*/
+		-o-transition-property: none !important
+		-moz-transition-property: none !important
+		-webkit-transition-property: none !important
+		transition-property: none !important
+		/*CSS transforms*/
+		-o-transform: none !important
+		-moz-transform: none !important
+		-ms-transform: none !important
+		-webkit-transform: none !important
+		transform: none !important
+		/*CSS animations*/
+		-webkit-animation: none !important
+		-moz-animation: none !important
+		-o-animation: none !important
+		animation: none !important
+
+
+
+@media only screen and (max-width : 580px)
+	.menu
+		&__items
+			&--item
+				&:nth-child(even)
+					// Right block
+					.item
+						&__image--container
+							order: 1
+							&--image
+								right: calc(50% - 219px/2)
+								top: -470px
+						&__description
+							&--container
+								text-align: center
+								padding:  120px 40px 55px 40px
+								margin-right: 20px
+								margin-top: 70px
+
+				&:nth-child(odd)
+					// Left block
+					.item
+						&__image--container
+							&--image
+								left: calc(50% - 219px/2)
+
+						&__description
+							&--container
+								text-align: center
+								padding: 120px 40px 55px 40px
+								margin-right: 20px
+								margin-top: 70px
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+
+	.top-menu
+		.col-5
+			padding-right: 25px
+
+	.welcome-to-restaurant
+		.block-about-restaurant
+			margin: 150px 0 100px 0
+			.discription
+				font-size: 40px
+			.title
+				font-family: "Average", sans-serif
+				font-size: 46px
+				color: #fff
+			.text
+				margin-top: 20px
+
+	.container-figures
+		.container-square
+			.square
+				height: 650px
+
+		.container-about
+			position: absolute
+			top: -630px
+			.block-about
+				margin: 0 25px
+				.container-span
+					font-size: 30px
+				.title
+					h2
+						font-size: 26px
+				.text
+					font-size: 13px
+
+	.container-our-menu
+		.info-our-menu
+			margin-bottom: 0
+		.item-menu-food
+			text-align: center
+			margin: 60px 0
+			padding-right: 10px
+			.container-img
+				img
+					width: 133px
+					height: 98px
+			.title
+				font-size: 16px
+			.type
+				font-size: 18px
+			.price
+				font-size: 16px
+
+	.menu
+		&__items
+			&--item
+				&:nth-child(even)
+					// Right block
+					.item
+						&__image--container
+							order: 1
+							&--image
+								right: calc(50% - 219px/2)
+								top: -495px
+						&__description
+							&--container
+								text-align: center
+								padding:  140px 40px 55px 40px
+								margin-right: 20px
+								margin-top: 120px
+
+				&:nth-child(odd)
+					// Left block
+					.item
+						&__image--container
+							&--image
+								left: calc(50% - 219px/2)
+								top: 70px
+
+						&__description
+							&--container
+								text-align: center
+								padding: 140px 40px 55px 40px
+								margin-right: 20px
+								margin-top: 120px
+
+
+	.container-our-chefs
+		.our-chefs
+			margin: 87px 0 50px 0
+		.item-shefs
+			margin: 50px 0
+			.title
+				margin-bottom: 20px
+			.container-icons
+				margin: 10px 0
+				i
+					color: $accent-color
+					font-size: 14px
+			.info
+				font-size: 15px
+				font-family: "AverageRegular", sans-serif
+				color: #fff
+				padding: 0 25px
+
+	.footer
+		.button
+			margin-left: 26px
+			.item-button
+				padding: 12px 25px
+				display: block
+		.footer_email
+			.button
+				.item-button
+					padding: 12px 16px
+	input
+		width: 120px
+
+
+	.bottom-slider
+		.bottom-slide
+			padding-right: 10px
+			padding-left: 10px
+
+
+
+@media only screen and (max-width : 374px)
+	.menu
+		&__items
+			&--item
+				&:nth-child(even)
+					// Right block
+					.item
+						&__image--container
+							order: 1
+							&--image
+								right: calc(50% - 219px/2)
+								top: -570px
+				&:nth-child(odd)
+					// Left block
+					.item
+						&__image--container
+							&--image
+								left: calc(50% - 219px/2)
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	.top-pannel
+		.col-4
+			padding-left: 0
+		.pannel-block-right
+			text-align: left
+
+	.container-foods
+		.foods-info
+			margin-right: 15px
+
+	.footer
+		.button
+			margin-left: 26px
+			.item-button
+				padding: 12px 25px
+				display: block
+
+	.container-history
+		.block-history
+			margin-right: 15px
+
+	.container-opening-hours
+		.col-lg-8
+			.block-left-hours
+				margin: 0 30px 0 12px
+				.container-img
+		.col-lg-4
+			.block-right-hours
+				margin: 0 30px 0 12px
+
+
+	.container_book_a_table
+		.row
+			padding-right: 15px
+
+	.container_book_a_table-2
+		.book_a_table_title-2
+			padding-right: 15px
+
+	.footer
+		.footer_info
+			padding-right: 15px
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
