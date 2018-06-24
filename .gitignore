@@ -1,5 +1,5 @@
 # Dist folder goes to gh-pages branch
-dist/
+#dist/
 
 # Logs
 logs
